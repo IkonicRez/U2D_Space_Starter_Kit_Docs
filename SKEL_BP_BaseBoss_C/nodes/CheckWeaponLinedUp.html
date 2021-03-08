@@ -1,18 +1,18 @@
 <html xmlns="http://www.w3.org/TR/REC-html40">
   <head>
-    <title>Clamp Velocity</title>
+    <title>Check Weapon Lined Up</title>
     <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
   </head>
   <body>
     <div id="content_container">
       <a class="navbar_style" href="../../index.html">U2DSpaceStarterKit</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style" href="../BP_PaperFlyingPawn_C.html">BP Paper Flying Pawn</a>
+      <a class="navbar_style" href="../SKEL_BP_BaseBoss_C.html">BP Base Boss</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style">Clamp Velocity</a>
-      <h1 class="title_style">Clamp Velocity</h1>
-      <p>Runs Clamp Vector on the In Vec with the Min/Max being Velocity Min/Max</p>
-      <img src="../img/nd_img_ClampVelocity.png" />
+      <a class="navbar_style">Check Weapon Lined Up</a>
+      <h1 class="title_style">Check Weapon Lined Up</h1>
+      <p>Check if the player is in-line with the weapon to check</p>
+      <img src="../img/nd_img_CheckWeaponLinedUp.png" />
       <h3 class="title_style">Inputs</h3>
       <table>
         <colgroup>
@@ -22,8 +22,17 @@
         <tbody>
           <tr>
             <td>
-              <div class="param_name title_style">In Vec</div>
-              <div class="param_type">Vector</div>
+              <div class="param_name title_style">Weapon to Check</div>
+              <div class="param_type">EWeapons Enum</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Error Tolerance</div>
+              <div class="param_type">Float</div>
             </td>
             <td>
               <p />
@@ -41,7 +50,7 @@
           <tr>
             <td>
               <div class="param_name title_style">Return Value</div>
-              <div class="param_type">Vector</div>
+              <div class="param_type">Boolean</div>
             </td>
             <td>
               <p />

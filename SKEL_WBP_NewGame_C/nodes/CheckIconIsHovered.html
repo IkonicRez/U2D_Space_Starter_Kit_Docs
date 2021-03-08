@@ -1,18 +1,18 @@
 <html xmlns="http://www.w3.org/TR/REC-html40">
   <head>
-    <title>Check Weapon Lined Up</title>
+    <title>Check Icon Is Hovered</title>
     <link rel="stylesheet" type="text/css" href="../../css/bpdoc.css" />
   </head>
   <body>
     <div id="content_container">
       <a class="navbar_style" href="../../index.html">U2DSpaceStarterKit</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style" href="../BP_BaseBoss_C.html">BP Base Boss</a>
+      <a class="navbar_style" href="../SKEL_WBP_NewGame_C.html">WBP New Game</a>
       <a class="navbar_style">&gt;</a>
-      <a class="navbar_style">Check Weapon Lined Up</a>
-      <h1 class="title_style">Check Weapon Lined Up</h1>
-      <p>Check if the player is in-line with the weapon to check</p>
-      <img src="../img/nd_img_CheckWeaponLinedUp.png" />
+      <a class="navbar_style">Check Icon Is Hovered</a>
+      <h1 class="title_style">Check Icon Is Hovered</h1>
+      <p>Checks if the incoming icon is hovered and sets CharacterData to the icons character data</p>
+      <img src="../img/nd_img_CheckIconIsHovered.png" />
       <h3 class="title_style">Inputs</h3>
       <table>
         <colgroup>
@@ -22,8 +22,8 @@
         <tbody>
           <tr>
             <td>
-              <div class="param_name title_style">Weapon to Check</div>
-              <div class="param_type">EWeapons Enum</div>
+              <div class="param_name title_style">In</div>
+              <div class="param_type">Exec</div>
             </td>
             <td>
               <p />
@@ -31,8 +31,8 @@
           </tr>
           <tr>
             <td>
-              <div class="param_name title_style">Error Tolerance</div>
-              <div class="param_type">Float</div>
+              <div class="param_name title_style">Character Image</div>
+              <div class="param_type">WBP UI Character Icon Object Reference</div>
             </td>
             <td>
               <p />
@@ -49,8 +49,17 @@
         <tbody>
           <tr>
             <td>
-              <div class="param_name title_style">Return Value</div>
-              <div class="param_type">Boolean</div>
+              <div class="param_name title_style">Hovered</div>
+              <div class="param_type">Exec</div>
+            </td>
+            <td>
+              <p />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="param_name title_style">Unhovered</div>
+              <div class="param_type">Exec</div>
             </td>
             <td>
               <p />
